@@ -1,0 +1,14 @@
+{
+  "dense": {
+    "f1_macro": 0.8633812155709647,
+    "parameters": 50890,
+    "train_seconds": 13.917603100067936,
+    "inference_ms_per_image": 0.08964849000331014
+  },
+  "cnn": {
+    "f1_macro": 0.789213612104854,
+    "parameters": 19466,
+    "train_seconds": 101.81755030003842,
+    "inference_ms_per_image": 0.16561081999680027
+  }
+}
