@@ -30,6 +30,8 @@ Resultado sobre el set de prueba completo (10,000 imágenes), ejecución real de
 
 Global: **accuracy 0.793**, **F1 macro 0.789** (consistente con `reports/cv_metrics.json`).
 
+**Curvas de entrenamiento** (`reports/training_curves.png`, generada a partir del log real de las 8 épocas): la dense converge casi por completo hacia la época 3-4 (pérdida y exactitud se aplanan, validación nunca se separa del entrenamiento). La CNN, en cambio, sigue mejorando con pendiente pronunciada hasta la época 8 — no tuvo tiempo de converger bajo el mismo presupuesto. En exactitud, la validación de la CNN se mantiene por encima del entrenamiento durante las 8 épocas, efecto esperado de `Dropout(0.25)` (activo solo en entrenamiento), no una señal de problema.
+
 | Clase | Precisión | Recall | F1 |
 |---|---|---|---|
 | 0 · T-shirt/top | 0.643 | 0.806 | 0.715 |
